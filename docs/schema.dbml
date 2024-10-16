@@ -19,4 +19,9 @@ Table Track {
 }
 
 Ref: User.playlists < Playlist.owner
+//1 User has manny playlists
+// the connecting fiels are playlis
+// < mouthnopens toward the "many"
+
 Ref: Playlist.tracks <> Track.playlists
+// <> many to many
