@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+// Morgan prisma studio detailed log
+app.use(require("morgan")("dev"));
+
 // Built-in body-parser middleware in Express for parsing JSON data.
 // It extracts the data from the request body and makes it available in req.body object
 app.use(express.json());
