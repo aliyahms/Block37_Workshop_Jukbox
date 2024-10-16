@@ -1,0 +1,30 @@
+@host=http://localhost:3000
+
+### Get all users
+GET {{host}}/users
+
+### Get specific user
+GET {{host}}/users/2
+
+### Get all playlists
+GET {{host}}/playlists
+
+### Get specific playlist
+GET {{host}}/playlists/2
+
+### Add new playlist
+POST {{host}}/playlists
+Content-Type: application/json
+
+{
+  "name": "Playlist Foo",
+  "description": "Foobar baz wobble!",
+  "ownerId": 2,
+  "trackIds": [1,3,5]
+}
+
+### Get all tracks
+GET {{host}}/tracks
+
+### Get specific track
+GET {{host}}/tracks/2
